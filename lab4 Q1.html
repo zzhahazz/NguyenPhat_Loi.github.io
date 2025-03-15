@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+             
+            label {
+                float: left;
+            }
+            label.tb-radio {
+                float: left;
+                clear: both;
+            }
+        </style>  
+        
+    </head>
+    <body>
+        <img src="IU.png" alt="IU" style="width:128px;height:128px;" >
+        <h1 style = "color:blue">Survey</h1>
+        <p> If you have a moment, we'd appreciate it if you would fill out this survey</p>
+        <h2 style = "color:blue"> Your information: </h2>
+        <form method="post" action="result.jsp">
+            <label for="fname">First name:</label><br>
+            <input type="text" id="fname" name="fname"><br>
+            <label for="lname">Last name:</label><br>
+            <input type="text" id="lname" name="lname"><br>
+            <label for="e">Email:</label><br>
+            <input type="text" id="e" name="e"><br>
+            <label for="d">Date of Birth</label><br>
+            <input type="text" id="d" name="d"><br>
+            
+            <h2 style = "color:blue"> How did you hear about us</h2>
+            
+            <input type="radio" id="1" name="1" value="1">Search engine
+            <input type="radio" id="2" name="2" value="2">Word of mouth
+            <input type="radio" id="3" name="3" value="3">Social Media
+            <input type="radio" id="4" name="4" value="4">Other<br><br>
+            
+            <h2 style = "color:blue"> Would you like to receive announcements about new CDs and special offers ?</h2>
+            
+            <input type="checkbox" name="c1" value="ON">YES, i'd like that <br>
+            <input type="checkbox" name="c2" value="ON">YES, please send me email announcements<br><br>
+            
+            <label for="d">Please contact me by: </label>
+            <select name="Type">
+                <option value= “Contact”>Email or postal mail</option>
+                <option value= “Reading”>Email only</option>
+                <option value= “Reading”>Postal mail only</option>
+            </select><br><br>
+            
+            <input type="submit" value="Submit">
+            
+        </form>
+    </body>
+</html>
